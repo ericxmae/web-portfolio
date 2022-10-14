@@ -10,7 +10,21 @@
 	margin-right: 0;
 }
 
+/*revisions start*/
+#about {
+	border-color: var(--color-light);
+	border-radius: 30px;
+	border-style: groove;
+	border-width: thick;
+}
 
+#about li {
+	font-size: 1.5em;
+	list-style: none;
+}
+
+
+/*revisions end*/
 
 h1,h2,h3,h4,h5,h6,hr {
 	font-family: 'Playfair Display', serif;
@@ -19,6 +33,7 @@ h1,h2,h3,h4,h5,h6,hr {
 
 strong {
 	color: var(--color-light);
+	text-shadow: 1px 2px #25316D;
 }
 
 .tools-header {
