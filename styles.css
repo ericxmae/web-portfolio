@@ -1,8 +1,15 @@
 :root {
 	--color-light: #9AA9C8;
 	--color-dark: #25316D;
-	--color-white: #FFFFFF;
+	--color-white: #FFFFF;
 }
+
+*,
+*::before,
+*::after, {
+	box-sizing: border-box;
+}
+
 
 *{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -10,25 +17,50 @@
 	margin-right: 0;
 }
 
-/*revisions start*/
-#about {
-	border-color: var(--color-light);
-	border-radius: 30px;
-	border-style: groove;
-	border-width: thick;
+html, body{
+    overflow-x: hidden;
 }
-
-#about li {
-	font-size: 1.5em;
-	list-style: none;
-}
-
-
-/*revisions end*/
 
 h1,h2,h3,h4,h5,h6,hr {
 	font-family: 'Playfair Display', serif;
 	color: ;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+
+li {
+	list-style-type: none;
+
+}
+
+button {
+	background-color: var(--color-light);
+	border: none;
+	transform-style: none;
+}
+
+section {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+ul li a {
+	text-decoration: none;
+	color: var(--color-dark);
+}
+
+ul li a:hover {
+	text-decoration: none;
+	color: var(--color-light);
+
 }
 
 strong {
@@ -36,20 +68,57 @@ strong {
 	text-shadow: 1px 2px #25316D;
 }
 
-.tools-header {
-	background-color: var(--color-light);
-	margin-bottom: 60px;
-
+.img-logo {
+	width: 40px;
+	height: 40px;
+	margin: 1px;
+	margin-top: 1px;
 }
 
-.tools img {
+#nav {
+	padding: 0.5rem;
+}
+
+#nav , #home {
+	background-color: #EAE5E5;
+}
+
+.img-profile {
+	width: 200px;
+	height: 200px;
+}
+
+#about-body {
+	border-color: var(--color-light);
+	border-radius: 30px;
+	border-style: groove;
+	border-width: thick;
+}
+
+#about {
+	background-color: var(--color-white);
+}
+
+
+#about li {
+	font-size: 1em;
+	list-style: none;
+}
+
+#tools img {
 	max-height: 100px;
 	max-width: 100px;
 }
 
-li {
-	font-size: 2rem;
-	list-style: none;
+
+.footer-img {
+	width: 3rem;
+	height: 3rem;
+}
+
+
+.div-color {
+	background-color: var(--color-light);
 }
 
 .contact form {
@@ -58,11 +127,6 @@ li {
 	border-width: 5px;
 	border-radius: 30px;
 
-}
-
-
-.about {
-	background-color: var(--color-light);
 }
 
 .about-header h2 {
@@ -75,14 +139,22 @@ li {
 	border-width: 30px solid;
 }
 
-button {
-	background-color: var(--color-light);
-	border: none;
-	color: var(--color-white);
-	transform-style: none;
+@media (max-width: 479px){
+	.about-p {
+		font-size: 1rem;
+		text-align: justify;
+	}
 }
 
+@media (max-width: 280px){
+	.about-p {
+		font-size: 0.8rem;
+		text-align: center;
+	}
 
-.div-color {
-	background-color: var(--color-light);
+
+}
+
+.card {
+    min-height: 100%;
 }
